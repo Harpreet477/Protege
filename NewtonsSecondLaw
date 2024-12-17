@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9/"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasAcceleration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasAcceleration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasAcceleration"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasAcceleration"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#DynamicProblem"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasForce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasForce">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasMass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasForce"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasMass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasMass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasMass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasMass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#isAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#isAffectedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#isAffectedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasMass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#StaticProblem"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#valueOfAcceleration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#valueOfAcceleration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasAcceleration"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#valueOfForce -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#valueOfForce">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasForce"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#valueOfMass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#valueOfMass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#hasMass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#AngularAcceleration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#AngularAcceleration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#AppliedForce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#AppliedForce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#ConstantMass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#ConstantMass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#DynamicProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#DynamicProblem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#FrictionalForce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#FrictionalForce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#GravitationalForce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#GravitationalForce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#LinearAcceleration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#LinearAcceleration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#StaticProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#StaticProblem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Problem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#VariableMass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#VariableMass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force20N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Force20N">
+        <untitled-ontology-9:valueOfForce rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-9:valueOfForce>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass10kg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Mass10kg">
+        <untitled-ontology-9:valueOfMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-9:valueOfMass>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration2m/s² -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/untitled-ontology-9#Acceleration2m/s²">
+        <untitled-ontology-9:valueOfAcceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-9:valueOfAcceleration>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
